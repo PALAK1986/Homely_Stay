@@ -1,0 +1,148 @@
+// @import "./breakpoints.scss";
+// @import "./variables.scss";
+
+
+// .title-list {
+//   margin: 40px 100px;
+//   color: $blue;
+
+//   @include sm {
+//     margin: 40px 50px;
+//   }
+// }
+
+// .list {
+//   padding: 0 100px 120px;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 25px;
+
+//   @include xl {
+//     padding: 0 20px 120px;
+//   }
+// }
+
+
+
+
+
+
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.title-list {
+  margin: 40px 100px;
+  color: $blue;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;  // Center align title for better visibility
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $pinkred;  // Change color on hover to make the title interactive
+  }
+
+  @include sm {
+    margin: 40px 50px;
+    font-size: 20px;  // Slightly smaller font size on mobile
+  }
+}
+
+.list {
+  padding: 0 100px 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  gap: 20px;  // Reduced gap for better responsiveness
+
+  @include xl {
+    padding: 0 20px 120px;
+  }
+
+  @include sm {
+    padding: 0 20px 80px;  // Less padding on smaller screens for a cleaner look
+  }
+
+  .list-item {
+    position: relative;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff;  // Light background for the list items
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  // Soft shadow for depth
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  // Smooth transition for hover effects
+
+    &:hover {
+      transform: translateY(-5px);  // Lift effect on hover
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  // Darker shadow on hover
+    }
+
+    .image-container {
+      width: 100%;
+      height: 180px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      border-radius: 12px;  // Rounded corners for images
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  // Make sure the image covers the container without distortion
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);  // Zoom effect on image hover
+        }
+      }
+    }
+
+    .list-item-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;  // Dark text for readability
+      margin: 10px 0;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $pinkred;  // Change title color on hover
+      }
+    }
+
+    .list-item-description {
+      font-size: 14px;
+      color: #555;  // Muted text for descriptions
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: 700;
+      color: $pinkred;  // Highlight price with accent color
+    }
+  }
+}
+
+
+
+
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+}
+.listing-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.map-section {
+  flex: 1;
+  height: 500px;
+  position: sticky;
+  top: 100px;
+}

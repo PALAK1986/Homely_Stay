@@ -1,0 +1,38 @@
+/* src/styles/TermsAndConditions.scss */
+.terms-page {
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  .terms-banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .terms-content {
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .terms-content h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-content h2 {
+    font-size: 2rem;
+    color: #e76f51;
+    margin-top: 1.5rem;
+  }
+  
+  .terms-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  

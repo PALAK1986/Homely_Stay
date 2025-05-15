@@ -1,0 +1,79 @@
+// /* src/styles/SearchBar.scss */
+
+// .search-bar {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 10px;
+//     gap: 10px;
+//   }
+  
+//   .search-bar input {
+//     padding: 8px;
+//     border-radius: 5px;
+//     border: 1px solid #ccc;
+//     width: 200px;
+//   }
+  
+//   .search-bar button {
+//     padding: 10px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//   }
+  
+//   .search-bar button:hover {
+//     background-color: #0056b3;
+//   }
+  
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  gap: 4px;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.search-bar input,
+.search-bar .react-datepicker-wrapper {
+  border: none;
+  outline: none;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  font-size: 10px;
+  min-width: 60px;
+}
+
+.search-bar input[type="number"] {
+  width: 40px;
+}
+
+.search-bar button {
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #e0324d;
+}
